@@ -126,7 +126,7 @@ public class ClienteChat extends JFrame implements ActionListener {
 		String nombre = JOptionPane.showInputDialog("Introduce tu nombre o nick:");
 		Socket socket = null;
 		try {
-			socket = new Socket("127.0.0.1", puerto);
+			socket = new Socket("192.168.0.16", puerto);
 		} catch (IOException ex) {
 			ex.printStackTrace();
 			JOptionPane.showMessageDialog(null, "Imposible conectar con el servidor \n" + ex.getMessage(),
